@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "description": "Creates Wireframes from desings",
+  "authorEmail": "mike.coomber@zebra.com",
+  "author": "Mike Coomber",
+  "commands": [
+    {
+      "name": "create wireframe",
+      "identifier": "wireframe-creator.create-wireframe-identifier",
+      "script": "__create-wireframe.js",
+      "shortcut": "command shift x"
+    }
+  ],
+  "menu": {
+    "title": "Wireframe Creator",
+    "items": [
+      "wireframe-creator.create-wireframe-identifier"
+    ]
+  },
+  "version": "0.1.0",
+  "name": "wireframe-creator",
+  "identifier": "wireframe-creator",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}
