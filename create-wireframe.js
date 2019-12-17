@@ -30,7 +30,7 @@ function findBaseLayer(layers) {
 
 function changeLayerColour(layer) {
   if (layer.type === 'ShapePath') {
-    let color = layer.style.fills[0].color;
+    let color = layer.style.fills.length > 0 ? layer.style.fills[0].color : '#000000';
     let newColor = getNewColor(color);
     layer.style.fills = [createFill(newColor)];
     if (layer.name === 'Rectangle') {
